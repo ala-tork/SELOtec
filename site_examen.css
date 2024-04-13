@@ -1,0 +1,387 @@
+/*** add font to text **/
+/* Add this line to import the Open Sans font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+/* Apply the font to all text elements 3anta9ir el *  */
+/*  * => ya3ni el koll  */
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.titre {
+  text-align: center;
+}
+
+.titre2 {
+  text-align: center;
+}
+
+.titre3 {
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+}
+
+ul, li, header {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding-right: 10px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  margin-left: 30px;
+}
+
+.selotec {
+  position: relative;
+  color: white;
+  align-self: left;
+  left: -485px;
+  font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ****************** about us css ********************* */
+.image-acceil {
+  width: 100%;
+  padding-top: 54px;
+  padding-bottom: 0px;
+}
+
+.about-us {
+  padding: 50px;
+  background-color: rgb(238, 237, 237);
+}
+
+.btn-centre {
+  justify-content: center;
+  display: flex;
+  margin-top: 40px;
+}
+
+.btn-lire {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: rgb(252, 141, 5);
+  border: none;
+  padding: 9px 40px;
+  border-radius: 8px;
+}
+
+/* ****************** service css ********************* */
+.nos-services {
+  padding: 30px;
+  align-items: center;
+  position: relative;
+}
+
+.service-images {
+  display: block;
+  align-items: center;
+}
+
+.nos-services ul {
+  padding: 15px;
+  display: flex;
+}
+
+.nos-services li {
+  margin: 0px 15px;
+  position: relative;
+}
+
+.nos-services img {
+  border-radius: 15px;
+  margin: 7px;
+  height: 300px;
+  width: 300px;
+}
+
+/* 7therna el backgroun ou lkol ou 7atina opacity 0 bech maybench */
+.overlay {
+  position: absolute;
+  border-radius: 15px;
+  height: 300px;
+  width: 300px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.2s ease;
+  background-color: #333;
+}
+
+/* kil sourie tt3ada 3lih el opacity twali 1 */
+.nos-services li:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* ****************** produit css ********************* */
+.produit {
+  /* background-color: rgb(240,145,15,0.5); */
+  background-color: rgb(238, 237, 237);
+  padding: 35px 0px 50px 0px;
+}
+
+.titre2-produit {
+  text-align: center;
+}
+
+/* silde show css*/
+.nos-produit {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  overflow: hidden;
+}
+
+.slider {
+  /* box-shadow: 10px 10px 10px 10px rgb(124, 124, 124,0.3); */
+  box-shadow: 0 8px 30px 6px rgba(0, 0, 0, 0.2), 0 16px 10px 0px rgba(0, 0, 0, 0.19);
+  width: 80%;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.slider ul {
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider li.active {
+  opacity: 1;
+}
+
+/* ****************** Produit a la une css ********************* */
+.produit_a_la_une {
+  color: white;
+  background-color: #333;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.produit_a_la_une_images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#productList {
+  padding: 15px;
+  display: flex;
+  list-style: none;
+  position: relative;
+}
+
+#productList li {
+  margin-right: 15px;
+  text-align: center;
+}
+
+#productList li h3 {
+  text-align: center;
+  width: 70%;
+}
+
+#productList img {
+  margin: 7px;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+/* ****************** confiance css ********************* */
+.nous-confiance {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nous-confiance-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* overflow-x: auto;  */
+}
+
+.nous-confiance ul {
+  padding: 15px;
+  display: flex;
+  list-style: none;
+}
+
+.nous-confiance li {
+  margin-right: 15px;
+}
+
+.nous-confiance img {
+  margin: 7px;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.confiance-info {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 5px 0 40px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+/* ****************** partentaire css ********************* */
+.partenaires {
+  /* background-color: rgb(240,145,15,0.5); */
+  background-color: rgb(238, 237, 237);
+}
+
+.nos-partenaires-titre2 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.nos-partenaires {
+  margin-top: -40px;
+  height: 270px;
+  display: flex;
+  /* background-color: #ffffff;  */
+  align-items: center;
+  position: relative;
+}
+
+.nos-partenaires ul {
+  padding: 15px;
+  display: flex;
+}
+
+.nos-partenaires li {
+  position: relative;
+  left: 28%;
+}
+
+.nos-partenaires img {
+  border: solid black;
+  border-radius: 20px;
+  margin: 7px;
+  height: 140px;
+  width: 300px;
+}
+
+.part3 {
+  height: 20px;
+  width: 20px;
+}
+
+/* ****************** Footer css ********************* */
+.footer {
+  display: flex;
+  padding-left: 3%;
+  background-color: #333;
+}
+
+.footer-logo {
+  float: left;
+  width: 15%;
+  /* border: solid white; */
+}
+
+.footer img {
+  width: 120px;
+  height: 120px;
+  margin: 35px;
+}
+
+.footer-info {
+  margin-top: 10px;
+  color: white;
+  width: 50%;
+  /* border: solid white; */
+}
+
+.footer-map {
+  width: 32%;
+  padding: 30px;
+}
+
+iframe {
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=site_examen.css.map */
